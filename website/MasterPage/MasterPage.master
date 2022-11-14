@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="masterpage_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="../Css/StyleSheet.css" />
+    <title>Ice Allocation Manager</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="realContainer">
+            <div id="bigContainer">
+                <br /><asp:Image ID="imgLogo" runat="server" ImageUrl="http://www.seafairhockey.com/media/leagues/images/seafairmha/banner.jpg" Width="100%" />
+                <br />
+                <div id="navBarSiteMap">
+                    <asp:Menu ID="SiteMapMenu" CssClass="menuControl" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" OnMenuItemDataBound="SiteMapMenu_MenuItemDataBound">
+                        <DynamicHoverStyle  CssClass="dynamicHoverStyle"  />
+                        <DynamicMenuItemStyle  Cssclass="dynamicItemStyle"/>
+                        <DynamicMenuStyle   CssClass="dynamicMenuStlye"/>
+                        <StaticHoverStyle  CssClass="staticHoverStyle"/>
+                        <StaticMenuItemStyle  CssClass="staticMenuItemStyle"/>
+                        <StaticMenuStyle CssClass="staticItemStyle"  />
+                    </asp:Menu>
+                </div>
+                 <asp:SiteMapPath ID="SiteMapPath1" runat="server" Visible="True"></asp:SiteMapPath>
+
+                <div id="LoginControls">
+                    <asp:Label ID="lblName" runat="server"></asp:Label>
+                    <asp:LoginName ID="LoginName1" runat="server" /><br />
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="RedirectToLoginPage" LogoutPageUrl="~/Login.aspx" />
+                </div>
+
+                <br />
+                <div>
+                    <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+                </div>
+
+                <div id="bodyStyle">
+                    <br />
+                    <asp:ContentPlaceHolder ID="body" runat="server"></asp:ContentPlaceHolder>
+                </div>
+
+
+
+                <div>
+                    <asp:ContentPlaceHolder ID="ContactUs" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <br />
+                <br />
+
+                <div id="footer">
+                    Contact the allocator at
+                    <asp:Label ID="lblAdminEmail" runat="server" Text="Label"></asp:Label>
+                </div>
+                <br />
+                <br />
+
+            </div>
+        </div>
+
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" SiteMapProvider="XmlSiteMapProvider" StartingNodeOffset="1" />
+    </form>
+</body>
+</html>

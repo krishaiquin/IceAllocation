@@ -1,0 +1,151 @@
+﻿h1 {
+    text-align: center;
+}
+
+h4 {
+}
+
+body {
+    margin: 0 auto;
+    width: 90%;
+    width: 90%;
+    max-width: 1200px;
+    min-width: 400px;
+    font-family:Arial;
+    font-size:14px;
+    background-color:#EBEBEB;
+
+}
+
+
+#navBarSiteMap {
+    vertical-align:middle;
+    background-color:#079FDB;
+    height:auto;
+    padding: 3px;
+
+}
+
+#navBarSiteMap a {
+    color: white;
+    font-size: 10pt;
+
+}
+
+
+#LoginControls {
+    float: right;
+    text-align: right;
+}
+
+#ContactUsForm {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#loginContainer {
+    width: 400px;
+    margin: 0 auto;
+    align-content: center;
+    background-color:#E3EAEB;
+    border-style:solid;
+    border-color:#E6E2D8;
+}
+
+.shutdownmsg {
+    font-size: 26pt;
+    background-color: salmon;
+    border-style:none;
+    border-radius: 10px;
+    border-color:#575757;
+    padding: 15px;
+    line-height: 150%;
+}
+
+.announcement {
+    font-size: 20pt;
+    background-color: yellow;
+    border-style:none;
+    border-radius: 10px;
+    border-color:#575757;
+    padding: 10px;
+    line-height: 150%;
+}
+
+
+.right {
+    float: right;
+}
+
+a {
+    color:red;
+    text-decoration:none
+}
+
+#footer {
+    vertical-align:middle;
+    background-color:#079FDB;
+    height:40px;
+    width:100%;
+    vertical-align: middle;
+    line-height: 40px;
+    padding-left: 7px;
+}
+
+
+#bigContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+#realContainer {
+    border-style:solid;
+    background-color:white;
+    border-radius: 25px;
+    border-color:#575757;
+}
+
+td {
+    vertical-align: top;
+}
+
+.settingsGroup
+{
+
+    border-top: 2px solid;
+    border-color:#575757;
+    padding: 20px;
+    margin: 0px;
+}
+
+.reqDetailTable {
+    width: 400px;
+}
+
+.helpItem {
+    
+    border-top: 2px solid;
+    border-color:#575757;
+    padding: 20px;
+    margin: 0px;
+}
+
+.contentLinks a {
+    color:#0026ff
+}
+
+.contentLinks a:hover {
+    color:#0094ff
+}
+
+.body_teams {
+    width: 90%;
+}
+
+#lblResult {
+    color: red;
+    font-weight: bold;
+}
+
+.settingsLabel
+{
+}

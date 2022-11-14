@@ -1,0 +1,174 @@
+﻿
+
+/* Body of page, applies to behind the area behind the real container, defined in masterpage*/
+body
+{
+    background-color: #EBEBEB;
+}
+
+/* The area that contains the content of the each page */
+#realContainer
+{
+    background-color: white;
+    border-color: #575757;
+}
+
+
+/* Content placeholder in the master page that receives content from other pages*/
+#body
+{
+}
+
+
+#footer
+{
+    background-color: red;
+}
+
+
+/* All headers and section labels on the site use h3 */
+h3
+{
+    color: Black;
+}
+
+
+
+#loginContainer
+{
+    background-color: #E3EAEB;
+    border-color: #E6E2D8;
+}
+
+.shutdownmsg
+{
+    background-color: salmon;
+    border-color: #575757;
+}
+
+/* - Announcement and Scheduling disabled messages - */
+.announcement
+{
+    background-color: yellow;
+    border-color: #575757;
+    font-style:italic;
+}
+
+
+
+#lblResult {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+/* Applied to groups in the application settings page */
+.settingsGroup
+{
+    border-color: #575757;
+}
+
+.settingsLabel
+{
+}
+
+.helpItem
+{
+    border-color: #575757;
+}
+
+/*-- Menu within help pages --*/
+.contentLinks a
+{
+    color: #0026ff;
+}
+
+    .contentLinks a:hover
+    {
+        color: #0094ff;
+    }
+
+/* Applied to all links */
+a
+{
+    color: red;
+}
+
+
+
+
+/*-- GRIDVIEW STYLES --*/
+
+/* General style for whole gridview */
+.gridviewStyle
+{
+    color: #333333;
+    background-color: white;
+}
+
+    /* Style used for links/sorting within gridviews */
+    .gridviewStyle a
+    {
+        color: white;
+    }
+
+    /* Style for the header row of gridviews */
+    .gridviewStyle .headerStyle
+    {
+        background-color: red;
+    }
+
+    /* Style for every other row in gridviews */
+    .gridviewStyle .alt
+    {
+    }
+
+
+
+
+
+/*-- MENU ITEMS --*/
+
+#navBarSiteMap {
+    background-color:red;
+}
+
+#navBarSiteMap a {
+    color: white;
+}
+
+#navBarSiteMap a:hover {
+     background-color: white;
+    color: black;
+}
+
+
+
+/* These are the dynamic styles used when a user is interacting with the menu*/
+.dynamicItemStyle
+{
+    padding: 5px;
+}
+
+.dynamicMenuStlye
+{
+    background-color: red;
+}
+
+
+
+/* These are the static items that are always visible to an authenticated user*/
+
+.staticMenuItemStyle
+{
+    padding: 7px;
+}
+
+.staticItemStyle
+{
+    background-color: red;
+}
+

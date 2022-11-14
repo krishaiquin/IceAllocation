@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <!-- Root node must have a URL, dummy url Used as there is no single root page -->
+  <siteMapNode url="~/DummyUrl.aspx" title=""  description="">
+
+    
+    <!-- Start of Administrator navbar-->
+    <siteMapNode url="~/AdminLogin" title="Administration" description="">
+
+      <siteMapNode url="~/Default" title="Home"  description="" roles="Administrator" />
+      
+      <siteMapNode url="~/IceMaintenance" title="Ice Maintenance"  description="" roles="Administrator" visible="false"/>
+
+      <siteMapNode url="" title="Allocate Ice"  description="" roles="Administrator">
+        <siteMapNode url="~/Requests" title="Requested Ice"  description="" roles="Administrator"/>
+        <siteMapNode url="~/ReqDetail" title="Request Details"  description="" roles="Administrator" visible="false"/>
+        <siteMapNode url="~/ReviewIce" title="Ice Reviewing"  description="" roles="Administrator"/>
+      </siteMapNode>
+
+      <siteMapNode url="" title="Data Management"  description="" roles="Administrator">
+        <siteMapNode url="~/CreateTeam" title="Create Teams"  description="" roles="Administrator" />
+        <siteMapNode url="~/CreateIce" title="Create Ice Times"  description="" roles="Administrator"/>
+        <siteMapNode url="~/CreateLoc" title="Create Location"  description="" roles="Administrator"/>
+        <siteMapNode url="~/EditIce" title="Edit Ice"  description="" roles="Administrator"/>
+        <siteMapNode url="~/Teams" title="Edit Teams"  description="" roles="Administrator"/>
+        <siteMapNode url="~/EditTeam" title="Edit Team"  description="" roles="Administrator" visible="false"/>
+      </siteMapNode>
+
+      <siteMapNode url="" title="Settings"  description="" roles="Administrator">
+        <siteMapNode url="~/Settings" title="Account Settings"  description="" roles="Administrator"/>
+        <siteMapNode url="~/AppSettings" title="Application Settings"  description="" roles="Administrator"/>
+        <siteMapNode url="~/NewSeason" title="Reset Season"  description="" roles="Administrator"/>
+      </siteMapNode>
+      
+      <siteMapNode url="~/AdminHelp" title="Help"  description="" roles="Administrator" />
+      
+    </siteMapNode>
+    <!-- End of Administrator navbar-->
+
+    <!-- Start of Team navbar-->
+    <siteMapNode url="~/Login" title="Team" description="" >
+      <siteMapNode url="~/Home" title="Home"  description="" roles="Team"/>
+      <siteMapNode url="~/TeamIce" title="Enter Schedule"  description="" roles="Team"/>
+      <siteMapNode url="~/IceHistory" title="View Ice History"  description="" roles="Team"/>
+      <siteMapNode url="~/AccountSettings" title="Settings"  description="" roles="Team"/>
+      <siteMapNode url="~/TeamHelp" title="Help"  description="" roles="Team"/>
+    </siteMapNode>
+    <!-- End of Team navbar-->
+  </siteMapNode>
+  
+</siteMap>
